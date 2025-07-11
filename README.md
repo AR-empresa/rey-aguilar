@@ -1,203 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AR Empresas - Administración de Consorcios</title>
-  <meta name="description" content="Administración de consorcios profesional y personalizada. AR Empresas, gestión eficiente para edificios residenciales y comerciales.">
-  <meta name="keywords" content="administración de consorcios, consorcios, gestión de edificios, AR Empresas, consorcio, contabilidad, limpieza, mantenimiento">
-  <meta name="author" content="AR Empresas">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      text-align: center;
-    }
-    img {
-      width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    header {
-      background-color: #000;
-      color: white;
-      padding: 2rem;
-    }
-    header img {
-      max-width: 120px;
-      border-radius: 12px;
-      filter: none;
-      width: 120px;
-      height: auto;
-    }
-    .hero {
-      background: url('https://www.infobae.com/resizer/v2/LLNUOL46JJCTPGVO76TZJ6IUBM.jpg?auth=6ada227c54cc45d9b895d7608c319e4a9a9c6521b7c5050e87a968ab2b1ba473&smart=true&width=992&height=743&quality=85') no-repeat center center/cover;
-      color: white;
-      padding: 6rem 2rem;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-    }
-    .hero p {
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    }
-    .hero button {
-      margin: 0 1rem;
-      padding: 1rem 2rem;
-      border: none;
-      background-color: #333;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .hero button:hover {
-      background-color: #555;
-    }
-    main {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #000;
-      margin-bottom: 1rem;
-    }
-    .servicios ul, .porque ul {
-      list-style: none;
-      padding: 0;
-    }
-    .servicios li, .porque li {
-      background: #f2f2f2;
-      margin-bottom: 0.5rem;
-      padding: 1rem;
-      border-left: 5px solid #333;
-    }
-    .referencias img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 1rem;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      padding: 2rem;
-    }
-    .contacto p {
-      margin: 0.5rem 0;
-    }
-    #contenidoServicios {
-      opacity: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.5s ease-in-out;
-    }
-    #contenidoServicios.visible {
-      opacity: 1;
-      max-height: 2000px;
-    }
+# AR Empresas - Administración de Consorcios
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .hero p {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://i.imgur.com/J1zRA7a.jpeg" alt="Logo de AR Empresas">
-  </header>
+## Descripción
+Este proyecto es una página web estática para **AR Empresas**, una firma dedicada a la administración profesional de consorcios residenciales y comerciales. El sitio ofrece información sobre la empresa, sus servicios, referencias laborales y medios de contacto.
 
-  <section class="hero" role="banner">
-    <h1>Administración Profesional de Consorcios</h1>
-    <p>Gestión transparente, eficiente y cercana, nos ocupamos de todo para que vos no tengas que preocuparte por nada.</p>
-    <button id="btnPresupuesto" aria-label="Solicitar presupuesto">Solicitar presupuesto</button>
-    <button id="btnServicios" aria-label="Ver servicios ofrecidos">Conocé nuestros servicios</button>
-  </section>
+## Estructura del Proyecto
+- **HTML**: Página completa estructurada con secciones claras (header, hero, main, footer).
+- **CSS embebido**: Estilos básicos para diseño responsivo, tipografía, colores y layout.
+- **JavaScript**: Funcionalidad para mostrar/ocultar la lista de servicios y abrir un enlace externo para solicitar presupuesto.
 
-  <main>
-    <section class="quienes">
-      <h2>¿Quiénes somos?</h2>
-      <p>Somos AR Empresas, una firma especializada en la administración de consorcios, ofrecemos un servicio profesional, transparente y personalizado tanto para edificios residenciales como comerciales.</p>
-      <p>Contamos con un equipo de contadores y especialistas en construcción que trabajan en conjunto para que tu consorcio funcione como debe ser siempre.</p>
-    </section>
+## Características principales
+- Encabezado (header) con logo.
+- Sección Hero con título, descripción y botones para:
+  - Solicitar presupuesto (abre link externo).
+  - Ver servicios ofrecidos (muestra contenido adicional con animación).
+- Sección "¿Quiénes somos?": Información sobre la empresa y su equipo.
+- Sección de Servicios: Lista de servicios administrados (contabilidad, mantenimiento, comunicación, auditorías, etc.).
+- Razones para elegir AR Empresas: Beneficios y características diferenciales.
+- Referencias laborales: Contactos y datos de personas y profesionales relacionados.
+- Pie de página (footer) con datos de contacto y derechos de autor.
 
-    <div id="contenidoServicios">
-      <section class="servicios">
-        <h2>Servicios que ofrecemos</h2>
-        <ul>
-          <li>Administración contable y financiera</li>
-          <li>Pago a proveedores y sueldos</li>
-          <li>Reclamos y comunicación con propietarios</li>
-          <li>Supervisión de mantenimiento y limpieza</li>
-          <li>Gestión de obras, seguros y trámites legales</li>
-          <li>Auditorías internas y rendiciones mensuales</li>
-        </ul>
-      </section>
+## Tecnologías usadas
+- HTML5
+- CSS3 (interno)
+- JavaScript básico para interactividad
 
-      <section class="porque">
-        <h2>¿Por qué elegirnos?</h2>
-        <ul>
-          <li>Atención personalizada con un único referente por edificio</li>
-          <li>Plataforma online para consorcistas</li>
-          <li>Rendiciones claras y actualizadas</li>
-          <li>Gestión de reclamos en menos de 24 hs</li>
-          <li>Visitas técnicas periódicas al edificio</li>
-        </ul>
-      </section>
+## Uso
+1. Abrir el archivo `index.html` en un navegador moderno.
+2. Clic en **"Conocé nuestros servicios"** para expandir o contraer la lista de servicios.
+3. Clic en **"Solicitar presupuesto"** para abrir un enlace externo.
 
-      <section class="referencias">
-        <h2>Referencias laborales</h2>
-        <p><strong>Parlato Antonio:</strong> 3442-629410 – Edificio: 8 de Junio 1054</p>
-        <p><strong>Torres Lucas:</strong> 3442-506111 – Edificio: Juan Perón 678</p>
-        <h3>AR Administración</h3>
-        <p>Contadora: AGUILAR MIRIAM MP 4658 – CPCEER</p>
-        <p>Arquitectura y construcción: REY MARTÍN</p>
-        <p>Dirección: Artusi A1020, C. del Uruguay – Entre Ríos</p>
-        <p>Email: ar.admon.aguilar.rey@gmail.com</p>
-        <p>Teléfonos: 03442-602330  | 3442-681925</p>
-        <img src="https://www.infobae.com/resizer/v2/LLNUOL46JJCTPGVO76TZJ6IUBM.jpg?auth=6ada227c54cc45d9b895d7608c319e4a9a9c6521b7c5050e87a968ab2b1ba473&smart=true&width=992&height=743&quality=85" alt="Foto del edificio administrado">
-      </section>
-    </div>
-  </main>
+## Personalización
+- Cambiar logo, imágenes y textos para adaptar a otras empresas.
+- Modificar estilos CSS en la sección `<style>` para ajustar diseño y colores.
+- Actualizar enlaces externos según necesidad.
 
-  <footer class="contacto">
-    <p>© 2025 AR Empresas</p>
-    <p>Correo: ar.admon.aguilar.rey@gmail.com</p>
-    <p>Teléfonos: 03442-681925 – 3442-602330</p>
-  </footer>
+## Notas adicionales
+- El sitio está diseñado en español, con foco en la accesibilidad básica.
+- Utiliza la fuente *Poppins* de Google Fonts.
+- Diseño minimalista y profesional.
 
-  <script>
-    const btnPresupuesto = document.getElementById('btnPresupuesto');
-    const btnServicios = document.getElementById('btnServicios');
-    const contenidoServicios = document.getElementById('contenidoServicios');
+---
 
-    btnServicios.addEventListener('click', () => {
-      contenidoServicios.classList.toggle('visible');
-      if (contenidoServicios.classList.contains('visible')) {
-        contenidoServicios.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+*Si necesitas ayuda o quieres sugerencias para mejorar el proyecto, ¡no dudes en preguntar!*
 
-    btnPresupuesto.addEventListener('click', () => {
-      window.open('https://www.hopp.bio/ar-administraciones', '_blank');
-    });
-  </script>
-</body>
-</html>
